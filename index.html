@@ -200,31 +200,19 @@ span#moreClose {
       <div id="moreContent">
         <div class="more show">
           <div class="tabs">
-              <span class="pdfTab tab bgTitleColor">PDF</span>
-              <span class="audioTab tab">Audio</span>
-              <span class="bookingTab tab">News</span>
+              <span class="pdfTab tab bgTitleColor">About</span>
               <span class="mapTab tab">Map</span>
+              <span class="bookingTab tab">Darshan tickets</span>
+              <span class="audioTab tab">Audio</span>
               <span class="booksTab tab">Book</span>
-              
           </div>
           <div id="tabContent" class="pdf show">
             <iframe id="templePDF"  width="640" height="480"></iframe>
-            <span class="loadMore">Show More</span>
           </div>
           <div id="tabContent" class="audio hide">
             <iframe id="templeAudio"  width="640" height="480"></iframe>
-            <!-- <iframe src="https://drive.google.com/file/d/18HvLTjnHvePFAgO_-H4LJtSYberFRsMw/preview" width="640" height="480"></iframe> -->
-            <span class="loadMore">Show More</span>
           </div>
           <div id="tabContent" class="booking hide">
-
-           
-            <span>
-              Latest News from TTD: 
-              <hr>
-              Accommodation quota for Tirumala location for the month of November 2020 will be available for booking with effective from 28-October-2020 11:00 A.M onwards
-              <hr>
-              Special Entry Darshan quota for the month of November 2020 will be available for booking with effective from 27-October-2020 11:00 A.M onwards</span>
             <span>Darshan tickets and Accomodation:</span>
             <span>https://tirupatibalaji.ap.gov.in/</span>
             <span>Official Site:</span>
@@ -238,7 +226,6 @@ span#moreClose {
           </div>
           <div id="tabContent" class="books hide">
               <iframe id="templeBooks"  width="640" height="480"></iframe>
-              <span class="loadMore">Show More</span>
           </div>
           
         </div> 
@@ -273,10 +260,7 @@ span#moreClose {
       </div>
     </div>
   </div> <!-- End of Video View-->
-
-  <div id="container">
-   
-      <div id="templeView" class="show">
+  <div id="templeView" class="show">
         <div id="header">
           <span class="saffron">&#9784;</span> 
           <span class="title titleColor">TempleGuru</span>
@@ -293,8 +277,7 @@ span#moreClose {
             <div class="more hide"></div>
           </div>
         
-      </div>
-  </div> <!-- End of Container-->
+  </div>
   <script>
 
      let tabViewTitleMonthElement = document.querySelector(".tabViewTitle.month");
@@ -703,7 +686,7 @@ span#moreClose {
     document.querySelector(".pdfTab.tab").classList.remove('bgTitleColor');
     document.querySelector(".audioTab.tab").classList.remove('bgTitleColor');
     document.querySelector(".bookingTab.tab").classList.add('bgTitleColor');
-    document.querySelector(".apTab.tab").classList.remove('bgTitleColor');
+    document.querySelector(".mapTab.tab").classList.remove('bgTitleColor');
     document.querySelector(".booksTab.tab").classList.remove('bgTitleColor');
     document.querySelector(".calendarTab.tab").classList.remove('bgTitleColor');  
   }
