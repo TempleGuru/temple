@@ -123,7 +123,7 @@ div#tabContent.booking span {
     text-align: center;
     padding: 15px;
 }
-#headerContainer span:hover {
+#headerContainer span:hover , .moreThreeDots:hover, .menu:hover, #moreClose:hover, .back:hover {
     color: #F93;
 }
 div#headerContainer, div#moreView {
@@ -177,6 +177,11 @@ div#moreView {
 span#moreClose {
     float: right;
     padding: 10px;
+}
+.moreThreeDots:after{
+  content: '\2807';
+  font-size: 25px;
+  float: right;
 }
 
   </style>
@@ -274,7 +279,9 @@ span#moreClose {
             <iframe width="560" height="315" src="https://www.youtube.com/embed/J8gKJ_OKN6Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div id="basicInfo">
-            <span class="title"> Sri Venkateswara Swami Temple, Tirupati</span> <i class="arrow down"></i>
+            <span class="title"> Sri Venkateswara Swami Temple, Tirupati</span> 
+            <span class="moreThreeDots"></span>
+            <!-- <i class="arrow down"></i> -->
             <span> 1800 425 4141 / 0877 227 7777 </span>
             <span> https://www.tirumala.org/</span>
             <div class="more hide"></div>
@@ -549,7 +556,7 @@ span#moreClose {
     
     
     // Moving the arrow up and down when clicks on it.
-    let contentArrow = document.querySelector(".arrow");
+    let contentArrow = document.querySelector(".moreThreeDots");
     let moreElement = document.querySelector(".more");
     let moreViewElement = document.querySelector("#moreView");
     let templePDFElement = document.querySelector("#templePDF");
